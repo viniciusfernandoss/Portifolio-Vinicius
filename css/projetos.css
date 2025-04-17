@@ -1,0 +1,46 @@
+@import url('https://fonts.cdnfonts.com/css/sf-ui-text-2');
+
+:root {
+    --fonte-principal: 'SF UI Text', sans-serif;                                   
+}
+
+.content2-projetos h2{
+    font-family: var(--fonte-principal);
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.btn-projetos {   
+    box-shadow: rgba(0, 0, 0, 1) 5px 5px;
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    font-weight: 600;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.2s ease;
+    background-color: white; /* só pra garantir que tenha contraste */
+}
+
+.btn-projetos:hover {
+    box-shadow: none;
+    transform: translate(5px, 5px); /* move o botão pra baixo e direita */
+}
+
+
+@keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+  }
+  
+  .content1-projetos img {
+    animation: float 1.8s ease-in-out infinite;
+  }
+  
