@@ -1,0 +1,381 @@
+@import url('https://fonts.cdnfonts.com/css/sf-ui-text-2');
+
+:root {
+    --fonte-principal: 'SF UI Text', sans-serif;
+    
+    --cor-titulo: #000;
+    --cor-paragrafo: rgb(113, 113, 122);
+
+    --cor-background: #fff;
+
+    --cor-preto: #000;
+}
+
+main{
+    background-color: var(--cor-background);
+}
+
+
+
+/*
+=====================================
+                Header
+=====================================
+*/
+header{
+    background-color: var(--cor-background);
+    color: var(--cor-titulo);
+    font-family: var(--fonte-principal);
+}
+
+.navbar-brand{
+    color: var(--cor-titulo);
+}
+
+.navbar-nav a{
+    color: var(--cor-titulo);
+    position: relative;
+    text-decoration: none;
+}
+
+
+.navbar-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: var(--cor-preto); /* cor da linha */
+    transition: width 0.6s ease;
+}
+
+.navbar-nav a:hover::after {
+    width: 100%;
+}
+
+/*
+=====================================
+        Banner Principal
+=====================================
+*/
+#bannerPrincipal{
+    height: 85vh;
+}
+.content1-bannerPricipal h1{
+    font-family: var(--fonte-principal);
+    color: var(--cor-titulo);
+    font-weight: 900;
+    font-size: 56px;
+}
+.content1-bannerPricipal p{
+    font-family: var(--fonte-principal);
+    color: var(--cor-paragrafo);
+}
+.img-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.img-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 10px;    /* Deslocamento vertical */
+    left: 10px;   /* Deslocamento horizontal */
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-preto); /* Cor da "borda" (pode usar qualquer cor) */
+    border-radius: 10px;       /* Se quiser cantos arredondados */
+    z-index: 0;
+}
+.img-wrapper img {
+    position: relative;
+    z-index: 1;
+    border-radius: 10px; /* Igual à borda se quiser manter o estilo */
+    width: 100%;
+    height: auto;
+}
+.btn-content-bannerPrincipal a{
+    box-shadow: var(--cor-preto) 5px 5px;
+    text-decoration: none;
+    border: 2px solid var(--cor-preto);
+    color: var(--cor-preto);
+    font-weight: 600;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.2s ease;
+    background-color: var(--cor-background);
+}
+.btn-content-bannerPrincipal a:hover{
+    box-shadow: none;
+    transform: translate(5px, 5px);
+}
+
+/*
+=====================================
+            Servicos
+=====================================
+*/
+#servicos{
+    height: 72vh;
+}
+
+.content-titulo-servicos p{
+    color: var(--cor-paragrafo);
+}
+
+.content-card-servicos{
+    background-image: url("../img/background-servicos-teste4.png");
+    background-position: center;
+    background-size: cover;
+    color: var(--cor-background);
+    box-shadow: rgba(255, 255, 255, 1) 0px 0px 3px;
+    transition: transform 0.3s ease;
+}
+.content-card-servicos:hover{
+    transform: scale(1.05);
+}
+.content-card-servicos p{
+    color: rgb(215, 216, 218);
+}
+
+
+
+/*
+=====================================
+            Projetos
+=====================================
+*/
+
+#projetos {
+  background-image: url("../img/background-servicos.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /* PARALLAX */
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+#projetos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* sombra escura */
+  z-index: 2;
+}
+
+#projetos .container {
+  position: relative;
+  z-index: 3;
+}
+
+.content-titulo-projetos h2{
+    color: var(--cor-background);
+    font-family: var(--fonte-principal);
+}
+
+.content-card-projetos{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.content-card-projetos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.content-card-projetos:hover img {
+    transform: scale(1.2);
+}
+
+.txt-card-projetos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content-card-projetos:hover .txt-card-projetos{
+    opacity: 1;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 14px;
+}
+
+
+.btn-projetos a{   
+    text-decoration: none;
+    color: var(--cor-preto);
+    font-weight: 600;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.2s ease;
+    background-color: var(--cor-background); /* só pra garantir que tenha contraste */
+}
+.btn-projetos a:hover {
+    transform: scale(1.06); /* move o botão pra baixo e direita */
+}
+
+/*  Animação subir e descer devagar
+    @keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+} */
+
+/*
+=====================================
+            Contato
+=====================================
+*/
+#form-contato{
+
+}
+
+#form-contato .form-nome, .form-email, .form-telefone, .form-mensagem{
+    border: var(--cor-preto) solid 2px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;          
+  font-size: 1rem;   
+  opacity: 1;    
+  font-weight: 600;     
+  font-family: var(--fonte-principal);   
+}
+
+.btn-redes-contato a{
+    text-decoration: none;
+    color: var(--cor-preto);
+    border: var(--cor-preto) solid 2px;
+    transition: all 0.2s ease;
+}
+.btn-redes-contato a:hover{
+    transform: scale(1.06); /* move o botão pra baixo e direita */
+    background-color: #000;
+    color: #fff;
+    border: transparent solid 2px;
+}
+.btn-redes-contato button{
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-preto);
+    color: var(--cor-background);
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-redes-contato button:hover{
+    background-color: rgb(31, 31, 31);
+    transform: scale(0.95);
+}
+
+.content-txt-form-contato h2{
+    font-family: var(--fonte-principal);
+}
+.content-txt-form-contato p{
+    font-family: var(--fonte-principal);
+    color: var(--cor-paragrafo);
+}
+.content-txt-form-contato h5{
+    font-family: var(--fonte-principal);
+}
+
+/*
+=====================================
+            Footer
+=====================================
+*/
+footer{
+    background-color: black;
+    font-family: var(--fonte-principal);
+}
+
+#footer-menu{
+    color: rgb(255, 255, 255);
+}
+
+.content2-footer2 a{
+    text-decoration: none;
+    color: white;
+}
+.content2-footer2 ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.content2-footer2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.content2-footer2 .bi{
+    font-size: 2rem;
+}  
+
+@keyframes desliza-lado {
+    0% {
+      transform: translateX(0);
+      width: 40%;
+    }
+    100% {
+      transform: translateX(10px); /* distância do movimento */
+      width: 100%;
+    }
+}
+
+.linha-footer2 {
+    height: 1px;
+    background-color: white;
+    animation: desliza-lado 3s ease-in-out infinite alternate;
+    width: 60%;
+}
+
+@media (min-width: 1920px) {
+
+    .img-wrapper::before {
+        width: 150%;
+    }
+    .img-wrapper img {
+        width: 150%;
+    }
+}
+
+@media (max-width: 992px) {
+    .content1-bannerPricipal h1{
+        font-size: 3rem;
+    }
+}
