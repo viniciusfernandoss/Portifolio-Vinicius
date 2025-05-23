@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <!-- Link CSS -->
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/projetos.css">
 
     <!-- Link ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="assets/js/reveal.js" defer></script>
+    <script src="js/reveal.js" defer></script>
 </head>
 <body>
     <!-- 
@@ -41,13 +41,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-3">
-                            <a class="nav-link fs-5 fw-semibold" href="#bannerPrincipal">Início</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link fs-5 fw-semibold" href="#servicos">Serviços</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link fs-5 fw-semibold" href="#projetos">Projetos</a>
+                            <a class="nav-link fs-5 fw-semibold" href="index.html">Início</a>
                         </li>
                         <li class="nav-item mx-3">
                             <a class="nav-link fs-5 fw-semibold" href="#contato">Contato</a>
@@ -57,146 +51,77 @@
             </div>
         </nav>
     </header>
-    
-    <main>
-        <!-- 
-        ===========================================
-                    Banner Principal
-        ===========================================
-        -->
-        <section id="bannerPrincipal" class="container d-flex align-items-center">
-            <div class="row">
-                <div class="col-lg-6 d-flex flex-column justify-content-center">
-                    <div class="content1-bannerPricipal">
-                        <h1>Desenvolvedor <br>Web</h1>
-                        <p class="fs-6 fw-normal">
-                            Com mais de 1 ano de atuação no mercado. Transformo ideias em interfaces intuitivas, crio códigos sólidos e sistemas que encantam quem navega.
-                        </p>
-                    </div>
-                    <div class="btn-content-bannerPrincipal">
-                        <a href="sobre.html" class="rounded-1 py-2 px-4 me-5">
-                            <i class="bi bi-person-fill"></i>
-                            Sobre mim
-                        </a>
-                        <a href="https://wa.me/5581999098348?text=Ol%C3%A1%2C%20gostaria%20de%20fechar%20um%20projeto%20de%20site%20com%20voc%C3%AA%21" class="rounded-1 py-2 px-4">
-                            <i class="bi bi-wallet-fill"></i>
-                            Solicitar orçamento
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="content2-bannerPricipal d-flex align-items-center justify-content-center">
-                        <div class="img-wrapper">
-                            <img src="assets/img/Vinicius3.webp" alt="Foto de Vinicius">
-                        </div>
-                    </div>
-                </div>                
+
+    <main class="d-flex flex-column align-items-center">
+        <section class="container py-5 mt-5">
+            <div class="content-titulo-projetos w-50 mx-auto text-center mb-5">
+                <h2 class="fs-1 fw-bold">MEUS PROJETOS</h2>
             </div>
-        </section>
-
-        <!-- 
-        ===========================================
-                        Serviços
-        ===========================================
-        -->
-        <section id="servicos" class="d-flex align-items-center">
-            <div class="container">
-                <div class="content-titulo-servicos mb-5 w-75 mx-auto text-center">
-                <h2 class="fs-1 fw-bold">MEUS SERVIÇOS</h2>
-                <p class="fs-5">
-                    Confira abaixo os principais serviços que ofereço:
-                </p>
-                </div>
-            
-                <div class="row">
-                <div class="col-lg-4">
-                    <div class="content-card-servicos p-3 rounded-1">
-                        <i class="bi bi-window-fullscreen fs-2"></i>
-                        <h3 class="fs-3 fw-semibold my-3">Landing page</h3>
-                        <p class="fs-6">
-                            Página única focada em conversão, ideal para campanhas, produtos ou serviços com layout moderno e formulário de contato.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="content-card-servicos p-3 rounded-1">
-                        <i class="bi bi-building fs-2"></i>
-                        <h3 class="fs-3 fw-semibold my-3">Site institucional</h3>
-                        <p class="fs-6">
-                            Site completo para apresentar sua empresa com páginas como “Sobre”, “Serviços” e “Contato”, com design responsivo.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="content-card-servicos p-3 rounded-1">
-                        <i class="bi bi-card-heading fs-2"></i>
-                        <h3 class="fs-3 fw-semibold my-3">Portfólio / Blog</h3>
-                        <p class="fs-6">
-                            Perfeito para mostrar projetos, artigos ou experiências profissionais, com navegação simples e foco em conteúdo.
-                        </p>
-                    </div>
-                </div>
-                </div>
-            </div>
-           
-        </section>
-
-        <!-- 
-        ===========================================
-                        Projetos
-        ===========================================
-        -->
-        <section id="projetos" class="d-flex align-items-center">
-
-            <div class="container">
-                <div class="content-titulo-projetos w-50 mx-auto text-center mb-5">
-                    <h2 class="fs-1 fw-bold">MEUS PROJETOS</h2>
-                </div>
                 
-                <div class="row mb-5">
-                    <div class="col-lg-4">
-                        <a href="https://meus.vercel.app/projetos/MVConsultoria/index.html" target="_blank">
-                            <div class="content-card-projetos d-flex justify-content-end align-items-start rounded-3" style="width: 350px; height: 220px;">
-                                <img src="assets/img/img-projeto1.jpg" alt="Projeto 1">
-                                <div class="txt-card-projetos">
-                                    <div class="card-title">Site institucional</div>
-                                    <div class="card-description">Escritório de Contabilidade do setor de saúde</div>
-                                </div>
+            <div class="row mb-5">
+                <div class="col-lg-4 mb-5">
+                    <a href="https://meus.vercel.app/projetos/MVConsultoria/index.html" target="_blank">
+                        <div class="content-card-projetos d-flex justify-content-end align-items-start rounded-3" style="width: 350px; height: 220px;">
+                            <img src="assets/img/img-projeto1.jpg" alt="Projeto 1">
+                            <div class="txt-card-projetos">
+                                <div class="card-title">Site institucional</div>
+                                <div class="card-description">Escritório de Contabilidade do setor de saúde</div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4">
-                        <a href="https://meus.vercel.app/projetos/CarlosSantosLandpage/index.html" target="_blank">
-                            <div class="content-card-projetos d-flex justify-content-end align-items-start rounded-3" style="width: 350px; height: 220px;">
-                                <img src="assets/img/img-projeto2.jpg" alt="Projeto 1">
-                                <div class="txt-card-projetos">
-                                    <div class="card-title">Landing page</div>
-                                    <div class="card-description">Landing page de contador</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4">
-                        <a href="https://meus.vercel.app/projetos/AgilMed/index.html" target="_blank">
-                            <div class="content-card-projetos d-flex justify-content-end align-items-start rounded-3" style="width: 350px; height: 220px;">
-                                <img src="assets/img/img-projeto3.jpg" alt="Projeto 1">
-                                <div class="txt-card-projetos">
-                                    <div class="card-title">Site institucional</div>
-                                    <div class="card-description">Empresa de equipamentos médico-hospitalares</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-
-                <div class="btn-projetos">
-                    <a href="projetos.html" class="rounded-1 py-2 px-4">
-                        VER MAIS TRABALHOS
-                        <i class="bi bi-arrow-right"></i>
+                <div class="col-lg-4 mb-5">
+                    <a href="https://meus.vercel.app/projetos/CarlosSantosLandpage/index.html" target="_blank">
+                        <div class="content-card-projetos d-flex justify-content-end align-items-start rounded-3" style="width: 350px; height: 220px;">
+                            <img src="assets/img/img-projeto2.jpg" alt="Projeto 1">
+                            <div class="txt-card-projetos">
+                                <div class="card-title">Landing page</div>
+                                <div class="card-description">Landing page de contador</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <a href="https://meus.vercel.app/projetos/AgilMed/index.html" target="_blank">
+                        <div class="content-card-projetos d-flex justify-content-end align-items-start rounded-3" style="width: 350px; height: 220px;">
+                            <img src="assets/img/img-projeto3.jpg" alt="Projeto 1">
+                            <div class="txt-card-projetos">
+                                <div class="card-title">Site institucional</div>
+                                <div class="card-description">Empresa de equipamentos médico-hospitalares</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <a href="https://meus.vercel.app/projetos/0aos5digitos/index.html" target="_blank">
+                        <div class="content-card-projetos d-flex justify-content-end align-items-start rounded-3" style="width: 350px; height: 220px;">
+                            <img src="assets/img/img-projeto4.jpg" alt="Projeto 1">
+                            <div class="txt-card-projetos">
+                                <div class="card-title">Landing Page</div>
+                                <div class="card-description">Divulgação de Curso</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <a href="https://meus.vercel.app/projetos/SeuMarceneiro/index.html" target="_blank">
+                        <div class="content-card-projetos d-flex justify-content-end align-items-start rounded-3" style="width: 350px; height: 220px;">
+                            <img src="assets/img/img-projeto5.jpg" alt="Projeto 1">
+                            <div class="txt-card-projetos">
+                                <div class="card-title">Site institucional</div>
+                                <div class="card-description">Empresa de marcenaria</div>
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
-           
+
+            <div class="btn-projetos text-center">
+                <a href="https://wa.me/5581999098348?text=Ol%C3%A1%2C%20gostaria%20de%20fechar%20um%20projeto%20de%20site%20com%20voc%C3%AA%21" class="rounded-1 py-2 px-4">
+                    <i class="bi bi-wallet-fill"></i>
+                    Solicitar orçamento
+                </a>
+            </div>
         </section>
 
         <!-- 
@@ -263,6 +188,7 @@
             </div>
 
         </section>
+        
     </main>
 
     <footer>
@@ -288,7 +214,8 @@
             </div>
         </div>
     </footer>
-    
+
+
 
     <!-- Link Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -297,6 +224,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Link JavaScript -->
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/projetos.js"></script>
 </body>
 </html>
