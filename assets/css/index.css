@@ -60,7 +60,7 @@ header{
 =====================================
 */
 #bannerPrincipal{
-    height: 85vh;
+    
 }
 .content1-bannerPricipal h1{
     font-family: var(--fonte-principal);
@@ -116,7 +116,7 @@ header{
 =====================================
 */
 #servicos{
-    height: 72vh;
+    
 }
 
 .content-titulo-servicos p{
@@ -152,7 +152,6 @@ header{
   background-size: cover;
   background-attachment: fixed; /* PARALLAX */
   background-repeat: no-repeat;
-  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
